@@ -1,0 +1,30 @@
+# runtime dependencies 
+chardet
+cryptography
+fernet
+json-datetime
+lxml
+matplotlib
+openpyxl
+pandas
+pdfkit
+#pg8000
+pyarrow
+#psycopg2
+psycopg2-binary
+#pymysql
+pytz
+PyYAML
+scikit-learn
+skforecast
+requests
+SQLAlchemy
+#xmltodict
+weasyprint # on Linux install `dnf install pango-devel`
+
+# development, packaging and distribution
+ipykernel   # support for JuPyther notebooks
+pytest      # unit testing framework compatible with our module `utils` in VSCode
+PyInstaller	# package builder
+#pipreqs		# dependency analyzer
+#pydoctor	# documentation generator

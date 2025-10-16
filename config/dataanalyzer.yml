@@ -1,0 +1,16 @@
+logger:
+   ## log level: critical=50, error=40, warning=30, info=20, debug=10, notset=0
+   level: 20
+sql:
+   student: Kurz-DAPYT_ST45
+   dboutput:
+      config:
+         config:
+            index: false
+            if_exists: replace
+sklad:
+  folder: source/sklad
+  cenik_kosmetiky: cenik_kosmetiky.csv
+  cenik_mobilu: cenik_mobilnich_telefonu.csv
+
+

@@ -1,0 +1,3 @@
+# /resource
+
+Materiály ke kurzu

@@ -1,0 +1,63 @@
+# ********************* TestAppFunctions ********************
+#
+# Configuration for testing of DataFrames IO
+#
+csv:
+   source:
+      config:
+         folder: tests/TestAppFunctions # relative to `app.DATA_FOLDER`
+         config:
+            parse_dates:
+            - dtm
+      dicegame:
+         filename: dicegame*.csv
+      flow:
+         filename: flow*.csv
+   output:
+      config:
+         format: csv
+         folder: tests/TestAppFunctions
+         config:
+            index: false
+      dicegame:
+         filename: dicegame_{timestamp}.csv
+      flow:
+         filename: flow_{timestamp}.csv
+excel:
+   source:
+      config:
+         folder: tests/TestAppFunctions
+         filename: test_dataframes.xlsx
+         config:
+            parse_dates:
+            - dtm
+      dicegame:
+         config:
+            sheet_name: dicegame
+      flow:
+         config:
+            sheet_name: flow
+   output:
+      config:
+         folder: tests/TestAppFunctions
+         filename: test_dataframes.xlsx
+         config:
+            index: false
+      dicegame:
+         config:
+            sheet_name: dicegame
+      flow:
+         config:
+            sheet_name: flow
+sql:
+   dbsource:
+      config:
+         config:
+            parse_dates: dtm
+      dicegame: select * from py_dbtest2
+      flow: select * from py_dbtest1
+   dboutput:
+      flow: py_dbtest1
+      dicegame: py_dbtest2
+                  
+               
